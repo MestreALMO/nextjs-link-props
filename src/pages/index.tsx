@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,15 @@ const Home: NextPage = () => {
 
       <main>
         <Typography variant="h1">DevALMO, YouTube channel</Typography>
+        <br />
+        <Link
+          href={{
+            pathname: "/receiveProps",
+            query: { id: 32, page: "page test" },
+          }}
+        >
+          ReceiveProps page
+        </Link>
       </main>
 
       <footer></footer>
